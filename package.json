@@ -1,0 +1,36 @@
+{
+    "name": "tori",
+    "version": "1.0.0",
+    "description": "Provide helpful methods",
+    "main": "lib/index.js",
+    "module": "lib/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "prepublish": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/avennn/tori.git"
+    },
+    "keywords": [
+        "es6",
+        "ts"
+    ],
+    "author": {
+        "name": "Javen Leung",
+        "email": "914301050@qq.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/avennn/tori/issues"
+    },
+    "homepage": "https://github.com/avennn/tori#readme",
+    "sideEffects": false,
+    "devDependencies": {
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "prettier": "2.2.1"
+    }
+}
