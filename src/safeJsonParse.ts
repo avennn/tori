@@ -1,17 +1,10 @@
-import getExactType from './getExactType'
-
+/**
+ * Try to parse input value correctly，return defaultVal if catch error.
+ */
 export default function safeJsonParse(input: any, defaultVal?: any) {
     try {
-        const result = JSON.parse(input)
-        if (
-            defaultVal !== undefined &&
-            getExactType(result) !== getExactType(defaultVal)
-        ) {
-            return defaultVal
-        } else {
-            return result
-        }
+        return JSON.parse(input);
     } catch (e) {
-        return defaultVal
+        return defaultVal;
     }
 }

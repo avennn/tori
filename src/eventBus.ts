@@ -1,9 +1,9 @@
 export class EventBus {
-    listeners: Record<string, Function[]>;
+    listeners: Record<string, ((...args: any[]) => any)[]>;
     constructor() {
         this.listeners = {};
     }
-    on(event: string, listener: Function) {
+    on(event: string, listener: (...args: any[]) => any) {
         if (!this.listeners[event]) {
             this.listeners[event] = [];
         }
@@ -14,7 +14,7 @@ export class EventBus {
             },
         };
     }
-    once(event: string, listener: Function) {
+    once(event: string, listener: (...args: any[]) => any) {
         this.listeners[event] = [listener];
         return {
             remove: () => {
@@ -22,7 +22,7 @@ export class EventBus {
             },
         };
     }
-    off(event: string, listener?: Function) {
+    off(event: string, listener?: (...args: any[]) => any) {
         if (!listener) {
             delete this.listeners[event];
         } else if (this.listeners[event]) {
