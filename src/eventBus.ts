@@ -1,3 +1,6 @@
+/**
+ * Simple wrapper of event bus.
+ */
 export class EventBus {
     listeners: Record<string, ((...args: any[]) => any)[]>;
     constructor() {
