@@ -12,7 +12,7 @@
         "release:major": "standard-version --release-as major",
         "release:minor": "standard-version --release-as minor",
         "release:patch": "standard-version --release-as patch",
-        "prepublish": "npm run build",
+        "prepublish": "npm run test && npm run build",
         "postinstall": "node ./node_modules/husky/lib/installer/bin install",
         "prepublishOnly": "pinst --disable",
         "postpublish": "pinst --enable"
@@ -45,7 +45,7 @@
         }
     },
     "lint-staged": {
-        "*.{ts}": [
+        "*.ts": [
             "npm run lint:fix"
         ]
     },
