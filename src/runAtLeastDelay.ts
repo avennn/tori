@@ -4,15 +4,15 @@ import sleep from './sleep';
  * Run function at least after specific delay.
  */
 export default async function runAtLeastDelay(
-    delay = 0,
     fn: (...args: any[]) => any,
-    startTime: number
+    delay = 0,
+    startTime?: number
 ) {
-    if (typeof delay !== 'number' || delay < 0) {
-        throw new Error('delay must be a positive number');
-    }
     if (typeof fn !== 'function') {
-        throw new Error('fn must be a function');
+        throw new Error('params fn must be a function');
+    }
+    if (typeof delay !== 'number' || delay < 0) {
+        throw new Error('params delay must be a positive number');
     }
     if (typeof startTime !== 'number' || startTime <= 0) {
         await sleep(delay);
