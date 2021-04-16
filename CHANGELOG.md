@@ -1,4 +1,11 @@
 tori
+## [1.2.0](https://github.com/avennn/tori/compare/v1.1.0...v1.2.0) (2021-04-16)
+
+
+### Feature
+
+* fix some problems and add unit test ([#2](https://github.com/avennn/tori/issues/2)) ([1cb612f](https://github.com/avennn/tori/commit/1cb612f0d767e2705b7849c39febf75c29e25c7a))
+
 ## [1.1.0](https://github.com/avennn/tori/compare/v1.0.0...v1.1.0) (2021-04-16)
 
 
