@@ -1,4 +1,11 @@
 tori
+### [1.2.1](https://github.com/avennn/tori/compare/v1.2.0...v1.2.1) (2021-04-16)
+
+
+### Bug Fix
+
+* change prepublish script ([#3](https://github.com/avennn/tori/issues/3)) ([b0d6532](https://github.com/avennn/tori/commit/b0d6532c40d75fb34254e03125d06d9e1b0ad9c4))
+
 ## [1.2.0](https://github.com/avennn/tori/compare/v1.1.0...v1.2.0) (2021-04-16)
 
 
