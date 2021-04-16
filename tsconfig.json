@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES5",
         "module": "commonjs",
         "strict": true,
         "esModuleInterop": true,
@@ -8,10 +8,7 @@
         "forceConsistentCasingInFileNames": true,
         "outDir": "lib",
         "rootDir": "src",
-        "declaration": true,
-        "paths": {
-            "@/*": ["./src/*"]
-        }
+        "declaration": true
     },
     "include": ["src/**/*.ts"]
 }

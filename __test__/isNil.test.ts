@@ -1,21 +1,23 @@
 import { isNil } from '../src';
 
-test('isNil(undefined) returns true', () => {
-    expect(isNil(undefined)).toBeTruthy();
-});
+describe('isNil', () => {
+    test('input undefined and return true', () => {
+        expect(isNil(undefined)).toBeTruthy();
+    });
 
-test('isNil(null) returns true', () => {
-    expect(isNil(null)).toBeTruthy();
-});
+    test('input null and return true', () => {
+        expect(isNil(null)).toBeTruthy();
+    });
 
-test('isNil(1) returns false', () => {
-    expect(isNil(1)).toBeFalsy();
-});
+    test('input 1 and return false', () => {
+        expect(isNil(1)).toBeFalsy();
+    });
 
-test('isNil("a") returns false', () => {
-    expect(isNil('a')).toBeFalsy();
-});
+    test('input string a and return false', () => {
+        expect(isNil('a')).toBeFalsy();
+    });
 
-test('isNil([]) returns false', () => {
-    expect(isNil([])).toBeFalsy();
+    test('input [] and return false', () => {
+        expect(isNil([])).toBeFalsy();
+    });
 });
