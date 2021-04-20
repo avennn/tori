@@ -1,4 +1,12 @@
 tori
+## [1.3.0](https://github.com/avennn/tori/compare/v1.2.2...v1.3.0) (2021-04-20)
+
+
+### Feature
+
+* sleep sleepAtLeast callback timer id ([fefae7a](https://github.com/avennn/tori/commit/fefae7ac93e8fef8e46a1b09cc19f0baf580aac7))
+* sleepAtLeast ([45a6a2a](https://github.com/avennn/tori/commit/45a6a2a608879c456934ddc8e1308dc3e888e638))
+
 ### [1.2.2](https://github.com/avennn/tori/compare/v1.2.1...v1.2.2) (2021-04-16)
 
 
