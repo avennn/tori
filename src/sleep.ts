@@ -4,6 +4,8 @@
 // TODO
 export default function sleep(delay: number): Promise<NodeJS.Timeout> {
     return new Promise((resolve) => {
-        setTimeout(resolve, delay);
+        const timer = setTimeout(() => {
+            resolve(timer);
+        }, delay);
     });
 }
