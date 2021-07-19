@@ -1,4 +1,11 @@
 tori
+## [2.0.0](https://github.com/avennn/tori/compare/v1.3.0...v2.0.0) (2021-07-19)
+
+
+### Feature
+
+* change method name & optimize function ([271446f](https://github.com/avennn/tori/commit/271446f3b723f06613bc1a033475d297f475ece3))
+
 ## [1.3.0](https://github.com/avennn/tori/compare/v1.2.2...v1.3.0) (2021-04-20)
 
 
