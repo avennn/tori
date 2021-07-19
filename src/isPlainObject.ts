@@ -1,5 +1,5 @@
-import getExactType from './getExactType';
+import toRawType from './toRawType';
 
 export default function isPlainObject(input?: any) {
-    return getExactType(input) === 'Object';
+    return toRawType(input) === 'Object';
 }

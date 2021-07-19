@@ -1,5 +1,5 @@
 import isPlainObject from './isPlainObject';
-import getExactType from './getExactType';
+import toRawType from './toRawType';
 
 interface IJsonParseOption {
     force?: boolean; // force result to keep same type with defaultVal
@@ -18,7 +18,7 @@ export default function safeJsonParse(
         if (
             isPlainObject(options) &&
             options!.force &&
-            getExactType(result) !== getExactType(defaultVal)
+            toRawType(result) !== toRawType(defaultVal)
         ) {
             return defaultVal;
         }

@@ -1,37 +1,37 @@
-import { getExactType } from '../src';
+import { toRawType } from '../src';
 
-describe('getExactType', () => {
+describe('toRawType', () => {
     test('input 1 and return Number', () => {
-        expect(getExactType(1)).toBe('Number');
+        expect(toRawType(1)).toBe('Number');
     });
     test('input "test" and return String', () => {
-        expect(getExactType('test')).toBe('String');
+        expect(toRawType('test')).toBe('String');
     });
     test('input true and return Boolean', () => {
-        expect(getExactType(true)).toBe('Boolean');
+        expect(toRawType(true)).toBe('Boolean');
     });
     test('input {} and return Object', () => {
-        expect(getExactType({})).toBe('Object');
+        expect(toRawType({})).toBe('Object');
     });
     test('input [] and return Array', () => {
-        expect(getExactType([])).toBe('Array');
+        expect(toRawType([])).toBe('Array');
     });
     test('input () => {} and return Function', () => {
         const a = () => {
             return 'a';
         };
-        expect(getExactType(a)).toBe('Function');
+        expect(toRawType(a)).toBe('Function');
     });
     test('input null and return Null', () => {
-        expect(getExactType(null)).toBe('Null');
+        expect(toRawType(null)).toBe('Null');
     });
     test('input undefined and return Function', () => {
-        expect(getExactType()).toBe('Undefined');
+        expect(toRawType()).toBe('Undefined');
     });
     test('input new Boolean(true) and return Ojbect', () => {
-        expect(getExactType(new Boolean(true))).toBe('Boolean');
+        expect(toRawType(new Boolean(true))).toBe('Boolean');
     });
     test('input Boolean(true) and return Ojbect', () => {
-        expect(getExactType(Boolean(true))).toBe('Boolean');
+        expect(toRawType(Boolean(true))).toBe('Boolean');
     });
 });
